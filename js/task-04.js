@@ -7,12 +7,12 @@ const buttonDec = document.querySelector('button[data-action="decrement"]');
 const buttonInc = document.querySelector('button[data-action="increment"]');
 
 const handleClickDec = () => {
-    counterValue += 1;
+    counterValue -= 1;
     valueEl.textContent = counterValue;
   };
 
 const handleClickInc = () => {
-    counterValue -= 1;
+    counterValue += 1;
     valueEl.textContent = counterValue;
   };
 

@@ -7,7 +7,7 @@ const changeText = (event) =>{
         return  outputText.textContent = 'Anonymous';
     }
    
-    return outputText.textContent = event.currentTarget.value;
+   outputText.textContent = event.currentTarget.value;
 }
 
 

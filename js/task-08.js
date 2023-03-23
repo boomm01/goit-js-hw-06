@@ -6,15 +6,16 @@ form.addEventListener('submit', onFormSubmit);
 function onFormSubmit (event) {
     event.preventDefault();
 
-    if(event.currentTarget.email.value === ''  || event.currentTarget.password.value === ''){
+    const {email, password} = event.currentTarget.elements;
+
+    if(email.value === ''  || password.value === ''){
         alert(message);
     } else{
         const formData = new FormData(event.currentTarget);
 
-        formData.forEach((email, password) =>{
-        console.log( email)
-        console.log( password);
-    })
+        const forData = {email, password};
+        console.log(forData);
+    }
     event.currentTarget.reset();
     }
 
@@ -22,4 +23,4 @@ function onFormSubmit (event) {
     
 
    
-}
+
