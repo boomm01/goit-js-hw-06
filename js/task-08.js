@@ -13,7 +13,11 @@ function onFormSubmit (event) {
     } else{
         const formData = new FormData(event.currentTarget);
 
-        const forData = {email, password};
+        const forData = {
+            email: email.value, 
+            password: password.value
+        };
+        
         console.log(forData);
     }
     event.currentTarget.reset();
